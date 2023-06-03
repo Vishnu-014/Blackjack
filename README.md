@@ -37,6 +37,7 @@ npm start
 
 
 ![alt text](https://github.com/Vishnu-014/Blackjack/blob/main/Screenshots/IMG_5675.PNG)
+### Place Bet
 ![alt text](https://github.com/Vishnu-014/Blackjack/blob/main/Screenshots/IMG_5676.PNG)
 ![alt text](https://github.com/Vishnu-014/Blackjack/blob/main/Screenshots/IMG_5677.PNG)
 ![alt text](https://github.com/Vishnu-014/Blackjack/blob/main/Screenshots/IMG_5678.PNG)
