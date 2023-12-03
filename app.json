@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -19,16 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.wishhh14.Blackjack"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "owner": "wishhh14",
     "extra": {
       "eas": {
-        "projectId": "ee627993-1a30-46c0-9b93-f6fff8cc1d43"
+        "projectId": "891e6618-3853-4695-912f-59024b5154e3"
       }
-    },
-    "owner": "wishhh14"
+    }
   }
 }
