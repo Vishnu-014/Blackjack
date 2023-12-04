@@ -11,6 +11,11 @@
     <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
   </a>
 </p>
+
+<p align="center">
+<img src="https://github.com/Vishnu-014/Blackjack/assets/42028686/a48d72b8-ccbb-44b3-ba7e-3815a73debf6">
+</p>
+
 <br>
 
 ## Installation
