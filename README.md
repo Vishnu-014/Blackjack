@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-  <h2 align="center">Blackjack ♠️</h2>
+  <h2 align="center">React Native Blackjack Game ♠️</h2>
 </div>
 
 <p align="center">
@@ -13,10 +13,13 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/Vishnu-014/Blackjack/assets/42028686/a48d72b8-ccbb-44b3-ba7e-3815a73debf6">
+    <img src="https://github.com/Vishnu-014/Blackjack/assets/42028686/a48d72b8-ccbb-44b3-ba7e-3815a73debf6">
 </p>
-
 <br>
+
+<p>
+Welcome to the React Native Blackjack game! This mobile app allows you to enjoy the classic Blackjack card game with a sleek and user-friendly interface.
+</p>
 
 ## Installation
 
@@ -41,7 +44,17 @@ To start up the app locally
 npm start
 ```
 
+## Features
+
+- Animated Card Movement
+- Animated Splash Screen
+- Place Bets Unknown Money
+- User Vs Computer
+- Custom Fonts
+
 ## Screenshots
+
+<img src="https://github.com/Vishnu-014/Blackjack/assets/42028686/ddc78895-39d8-4001-9330-2d7f7476abe8" alt="project-screenshot" width="200" height="400" />
 
 <img src="https://github.com/Vishnu-014/Blackjack/assets/42028686/4e64df40-8860-4513-aa1f-404fa74e7702" alt="project-screenshot" width="200" height="400/">
 

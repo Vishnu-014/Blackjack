@@ -6,11 +6,14 @@ import AppLoading from 'expo-app-loading';
 import * as SplashScreen from 'expo-splash-screen';
 import Blackjack from './screens/Blackjack';
 import BlackjackScreen from './screens/BlackjackScreen';
+import AnimatedSplashScreen from './components/splash';
 
 
 export default function App() {
+  const [appReady, setAppReady] = useState(false);
+  const [splashAnimationFinished, setSplashAnimationFinished] = useState(false);
 
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     "GameSpaceAcademy": require('./assets/fonts/GameSpaceAcademy.otf'),
     "Gameplay": require('./assets/fonts/Gameplay.ttf'),
     "GameOver": require('./assets/fonts/game_over.ttf'),
@@ -21,16 +24,38 @@ export default function App() {
   });
 
   useEffect(() => {
-    async function prepare() {
-      await SplashScreen.preventAutoHideAsync();
+    // async function prepare() {
+    //   await SplashScreen.preventAutoHideAsync();
+    // }
+    // prepare();
+    if (fontsLoaded || fontError) {
+      //SplashScreen.hideAsync();
+      setAppReady(true);
     }
-    prepare();
-  }, [])
+  }, [fontsLoaded, fontError])
 
-  if (!fontsLoaded) {
-    return undefined;
-  } else {
-    SplashScreen.hideAsync();
+  // if (!fontsLoaded) {
+  //   return <AnimatedSplashScreen
+  //     onAnimationFinish={(isCancelled) => {
+  //       if (!isCancelled) {
+  //         setSplashAnimationFinished(true);
+  //       }
+  //     }}
+  //   />
+  // } else {
+  //   //SplashScreen.hideAsync();
+  // }
+
+  if (!appReady || !splashAnimationFinished) {
+    return (
+      <AnimatedSplashScreen
+        onAnimationFinish={(isCancelled) => {
+          if (!isCancelled) {
+            setSplashAnimationFinished(true);
+          }
+        }}
+      />
+    );
   }
 
   return (
